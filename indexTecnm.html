@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TECNM</title>
+    <link rel ="stylesheet" href="./styles.css"> 
+</head>
+<body>
+    <header>
+        <div class="header-contenido">
+          <img src="./RecursosTECNM/LogoTECNM.png" alt="Logo TECNM" class="logo-left">
+      
+          <div class="titulos">
+            <h1>Tecnológico Nacional de México Campus Tlajomulco</h1>
+            <h2>Programación Web</h2>
+            <h3>Raúl Díaz Aguilar</h3>
+          </div>
+    
+          <img src="./RecursosTECNM/LogoITTJ2.png" alt="Logo ITTJ" class="logo-right">
+        </div>
+      </header>      
+
+      <div class="container">
+        <div class="registro-seccion">
+          <form id="registroForm">
+            <div class="form-group">
+                <h3>Formulario de registro</h3>
+              <label>Nombre:</label>
+              <input type="text" id="nombre" required>
+              <label>Email:</label>
+              <input type="email" id="email" required>
+              <label>Telefono:</label>
+              <input type="text" id="telefono" required>
+              <button type="submit">Registrate</button>
+            </div>
+          </form>
+      
+          <div class="tabla-registros">
+            <h3>Alumnos Registrados</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Nombre</th>
+                  <th>Email</th>
+                  <th>Telefono</th>
+                </tr>
+              </thead>
+              <tbody id="registros"></tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
